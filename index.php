@@ -9,3 +9,6 @@ class Movie {
     public $nome;
     public $anno;
 }
+
+$dogma = new Movie();
+$costantine = new Movie();
