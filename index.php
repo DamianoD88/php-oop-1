@@ -8,12 +8,37 @@ vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori 
 class Movie {
     public $nome;
     public $anno;
+    public $sconto = 0;
+    
+
+    public function setSconto($eta) {
+       if($eta > 10) {
+            $this->sconto = 20;
+       } 
+    }
+
+    public function getSconto() {
+        return $this-> sconto;
+    }
+
 }
+
+$dogma = new Movie();
+$dogma->setSconto(22);
+
+
+$costantine = new Movie();
+$costantine->setSconto(16);
+
 
 $dogma = new Movie();
 $dogma->nome = "Dogma";
 $dogma->anno = "1999";
+var_dump($dogma);
+
+
 
 $costantine = new Movie();
 $costantine->nome = "Costantine";
 $costantine->anno = "2005";
+var_dump($costantine);
