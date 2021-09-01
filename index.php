@@ -26,9 +26,15 @@ class Movie {
 $dogma = new Movie();
 $dogma->setSconto(22);
 
+$sconto = $dogma->getSconto();
+var_dump($sconto);
+
 
 $costantine = new Movie();
 $costantine->setSconto(16);
+
+$sconto2 = $costantine->getSconto();
+var_dump($sconto2);
 
 
 $dogma = new Movie();
