@@ -11,4 +11,9 @@ class Movie {
 }
 
 $dogma = new Movie();
+$dogma->nome = "Dogma";
+$dogma->anno = "1999";
+
 $costantine = new Movie();
+$costantine->nome = "Costantine";
+$costantine->anno = "2005";
